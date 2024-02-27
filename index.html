@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="weather-app">
+      <div class="container">
+        <form id="locationInput" class="search-form">
+          <input type="text" class="search" placeholder="Search Location..." />
+          <button type="submit" class="submit">search</button>
+        </form>
+        <section class="info">
+          <div>
+            <small>
+              <span class="time">06:09</span>
+              -
+              <span class="date">Monday Sep 19</span>
+            </small>
+          </div>
+          <div class="header">
+            <h1 class="name">Manila</h1>
+            <span class="condition"> Cloudy </span>
+            <img
+              src="./icons/64x64/day/113.png"
+              class="icon"
+              alt="icon"
+              width="50"
+              height="50"
+            />
+            <h1 class="temperature">16&#176;</h1>
+          </div>
+          <div class="body">
+            <div class="details">
+              <span>Cloudy</span>
+              <span class="cloud">89%</span>
+            </div>
+            <div class="details">
+              <span>Humidity</span>
+              <span class="humidity">64%</span>
+            </div>
+            <div class="details">
+              <span>Wind</span>
+              <span class="wind">8kph</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./js/sub.js"></script>
+  </body>
+</html>
