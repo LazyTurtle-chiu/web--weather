@@ -14,7 +14,7 @@ const search = document.querySelector(".search");
 const btn = document.querySelector(".submit");
 const cities = document.querySelectorAll(".city");
 
-let cityInput = "Manila";
+let cityInput = "manila";
 // cities.forEach((city) => {
 //   city.addEventListener("click", (e) => {
 //     cityInput = e.target.innerHTML;
@@ -171,10 +171,11 @@ function fetchWeatherData() {
         }
       }
       app.style.opacity = "1";
-    })
-    .catch((err) => {
-      alert("City not found. Please try again");
-      app.style.opacity = "1";
     });
+  // .catch((err) => {
+  //   alert("City not found. Please try again");
+  //   app.style.opacity = "1";
+  // }
+  // );
 }
 fetchWeatherData();
