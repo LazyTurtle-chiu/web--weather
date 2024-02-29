@@ -69,7 +69,7 @@ function dayOfTheWeek(day, month, year) {
 }
 function fetchWeatherData() {
   fetch(
-    `http://api.weatherapi.com/v1/current.json?key=564d2fad166c4cd2b7e135254242002&q=${cityInput}`
+    `https://api.weatherapi.com/v1/current.json?key=564d2fad166c4cd2b7e135254242002&q=${cityInput}`
   )
     .then((response) => response.json())
     .then((data) => {
@@ -179,3 +179,20 @@ function fetchWeatherData() {
     });
 }
 fetchWeatherData();
+const apiUrl =
+  "https://api.weatherapi.com/v1/current.json?key=564d2fad166c4cd2b7e135254242002&q=manila";
+
+// Make a GET request
+fetch(apiUrl)
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data); // Handle the retrieved data
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });
