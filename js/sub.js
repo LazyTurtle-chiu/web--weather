@@ -51,7 +51,7 @@ function monthOfTheYear(monthNumber) {
     "November",
     "December",
   ];
-  return months[monthNumber];
+  return months[monthNumber - 1];
 }
 
 // get the day of the week
@@ -73,7 +73,7 @@ function fetchWeatherData() {
   )
     .then((response) => response.json())
     .then((data) => {
-      //   console.log(data);
+      console.log(data);
       // app.style.opacity = 1;
       //   print day of the week month day year
       const date = data.location.localtime;
